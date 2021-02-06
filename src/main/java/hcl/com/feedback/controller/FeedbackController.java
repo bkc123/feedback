@@ -30,7 +30,7 @@ public class FeedbackController {
 		service.saveOrUpdate(comment);	
 		int id=  comment.getId();
 		// return all attribute of feedback
-		return "Feedback saved in dabatbase" +service.getFeedbackById(id);
+		return "Feedback saved in dabatbase. " +service.getFeedbackById(id);
 	}
 
 
